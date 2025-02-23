@@ -1,15 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
 
 const ThankYou = () => {
   const navigate = useNavigate();
 
   const handleOpenDayRegistration = (e) => {
     e.preventDefault();
-    toast.success('Thank you for registering! We will get in contact soon.', {
-      onClose: () => navigate('/'),
+    Swal.fire({
+      title: "Success!",
+      text: "You have successfully registered for the Open Day.",
+      icon: "success",
+      confirmButtonText: "OK"
+    }).then(() => {
+      navigate('/');
     });
   };
 
