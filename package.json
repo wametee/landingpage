@@ -12,6 +12,7 @@
   "dependencies": {
     "@sendgrid/mail": "^8.1.4",
     "@tailwindcss/vite": "^4.0.8",
+    "emailjs-com": "^3.2.0",
     "firebase": "^11.3.1",
     "lucide": "^0.475.0",
     "lucide-react": "^0.475.0",
